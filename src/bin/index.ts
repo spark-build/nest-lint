@@ -8,13 +8,13 @@ const rootDir = process.env.PWD || '.';
 
 const writeOptions = {
   eslint: {
-    path: path.join(rootDir, '.eslintrc1.js'),
+    path: path.join(rootDir, '.eslintrc.js'),
     template: `/* eslint-disable @typescript-eslint/no-var-requires */
 module.exports = require('@spark-build/nest-lint').default.eslint;
 `,
   },
   prettier: {
-    path: path.join(rootDir, '.prettierrc1.js'),
+    path: path.join(rootDir, '.prettierrc.js'),
     template: `/* eslint-disable @typescript-eslint/no-var-requires */
 module.exports = require('@spark-build/nest-lint').default.prettier;
 `,
