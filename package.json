@@ -1,0 +1,30 @@
+{
+  "name": "@spark-build/nest-lint",
+  "version": "0.0.0",
+  "description": "nest-lint",
+  "author": "atzcl0310@gmail.com",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc --build tsconfig.json",
+    "publish": "yarn build && npm version patch && npm publish"
+  },
+  "homepage": "https://github.com/spark-build/nest-lint#readme",
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.10.0",
+    "@typescript-eslint/parser": "^4.10.0",
+    "eslint": "7.16.0",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.3.0",
+    "prettier": "^2.2.1",
+    "typescript": "^4.1.3"
+  }
+}
