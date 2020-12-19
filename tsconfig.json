@@ -31,5 +31,5 @@
     "tslint-config-prettier",
     "example/**"
   ],
-  "include": ["src/*.json", "src/*.ts"]
+  "include": ["src/*", "src/bin/index.ts", ".eslintrc.js"]
 }
