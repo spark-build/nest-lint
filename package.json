@@ -21,7 +21,7 @@
   },
   "scripts": {
     "build": "rm -rf dist && tsc --build tsconfig.json",
-    "publish": "yarn build && npm version patch && npm publish",
+    "publishPackage": "yarn build && npm version patch && npm publish",
     "bin_dev": "node_modules/.bin/ts-node src/bin/index.ts"
   },
   "homepage": "https://github.com/spark-build/nest-lint#readme",
